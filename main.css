@@ -1,0 +1,17 @@
+body { 
+    /*저 body부분이 원래는 selector로, 우리는 body 부분을 수정하게 되는것*/
+    /*property : value;*/
+    /*background : blue;*/ /*이걸 html과 연결하는 방법 = html의 head 안 <link>
+    adobe color에서 theme 추출 가능 -> hexa code 복사 + blue 자리에 붙이기*/
+    background : #C2C0A6;
+    font-family : monospace;
+    line-height : 1.6; /*줄간격*/
+
+}
+ul, ol {
+    padding: 20px 30px; /*가로, 세로인듯*/
+}
+img {
+    width : 100px; /*pixel 단위가 아닌, %단위로 해서 창의 크기에 맞게 설정 가능함*/
+    height : 50px;
+}
