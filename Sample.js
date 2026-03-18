@@ -18,10 +18,10 @@ camera.lookAt(0, 2, 0);
 widow.addEventListener('pointerdown', (event)=>{ //When mouseclick occurs
     mouse.X = (event.clientX / window.innerWidth) *2 -1;
     mouse.Y = (event.clientY / window.innerHeight) *2 +1;
-    Raycaster.setFromCamera(mouse, camera);
+    Raycaster.setFromCamera(mouse, camera); //action's criteria(판정) -> hitscan
     const inersects = Raycaster.intersectPbject(ball);
     
-    if(IntersectionObserver.length > 0 
+    if(IntersectionObserver.length > 0) 
         {
         isDragging = true;
         velocity = 0;
@@ -30,6 +30,5 @@ widow.addEventListener('pointerdown', (event)=>{ //When mouseclick occurs
         dragPlane.setFromNormalAndCop1anarPoint(normal.negate(), ball.position);
         }
     
-    )
-    }
-)
+    
+});
